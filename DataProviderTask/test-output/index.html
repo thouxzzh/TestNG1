@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Public\seleniumBasics\DataProviderTask\testng.xml</span>
+                    <span>C:\Users\thous\git\TestNG1\DataProviderTask\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -143,13 +143,10 @@
                   <a name="Register">
                   </a> <!-- Register -->
                   <span class="method-name">Register</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-[public void com.tests.RegisterTests.Register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: Register([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
-Arguments: [(java.lang.String) Gender,(java.lang.String) FirstName,(java.lang.String) LastName,(java.lang.String) Email,(java.lang.String) Password,(java.lang.String) ConfirmPassword]
+                  <div class="stack-trace">org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.tests.DPExcel.excelDataProvider() throws java.io.IOException returned a null value
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,7 +170,7 @@ Arguments: [(java.lang.String) Gender,(java.lang.String) FirstName,(java.lang.St
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Public\seleniumBasics\DataProviderTask\testng.xml</span>
+            <span class="header-content">C:\Users\thous\git\TestNG1\DataProviderTask\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,18 +222,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Register')
-data.setCell(0, 2, 'com.tests.RegisterTests')
-data.setCell(0, 3, 706);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.tests.HomeTest')
+data.setCell(0, 3, 89);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.tests.HomeTest')
-data.setCell(1, 3, 91);
+data.setCell(1, 1, 'Register')
+data.setCell(1, 2, 'com.tests.RegisterTests')
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 797 ms</span>
+              <span class="suite-total-time">Total running time: 89 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,11 +266,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">60926 ms</span>
+                <span class="method-start">45954 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61021 ms</span>
+                <span class="method-start">46047 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
