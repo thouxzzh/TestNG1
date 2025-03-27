@@ -15,7 +15,6 @@ public class DPExcel {
         Object[][] arrobj = getExcelData("C:\\Users\\thous\\Downloads\\testng_webshop.xlsx", "Sheet1");
         return arrobj;
     }
-
     public Object[][] getExcelData(String fileName, String sheetName) throws IOException {
         Object[][] data = null;
         try {
