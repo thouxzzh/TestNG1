@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
 public class DPExcel {
     @DataProvider(name = "excelData")
     public Object[][] excelDataProvider() throws IOException {
-        Object[][] arrobj = getExcelData("C:\\Users\\Public\\seleniumBasics\\DataProviderTask\\src\\test\\resources\\testng_webshop.xlsx", "Sheet1");
+        Object[][] arrobj = getExcelData("C:\\Users\\thous\\Downloads\\testng_webshop.xlsx", "Sheet1");
         return arrobj;
     }
 

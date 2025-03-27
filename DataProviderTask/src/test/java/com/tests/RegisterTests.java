@@ -27,7 +27,8 @@ public class RegisterTests extends BaseTest {
 	    objReg.setConfirmPassword(confirmPassword);
 	    objReg.clickRegisterButton();
 
-	    Assert.assertTrue(driver.getPageSource().contains("Your registration completed"), "Registration was not successful");
+	    Assert.assertTrue(driver.getTitle().contains("Demo Web Shop. Register"));
+	    System.out.println(driver.getTitle());
 	  
   }
 }

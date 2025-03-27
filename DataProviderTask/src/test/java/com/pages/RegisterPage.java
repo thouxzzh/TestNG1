@@ -73,6 +73,7 @@ public class RegisterPage extends BasePage {
 
   public void clickRegisterButton() {
       registerButton.click();
+      System.out.println("register button is clicked");
   }
 
   

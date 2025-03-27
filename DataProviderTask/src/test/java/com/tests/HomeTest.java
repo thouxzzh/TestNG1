@@ -13,6 +13,7 @@ public class HomeTest extends BaseTest {
 		  objHome=new com.pages.HomePage(driver);
 		  String loginPageTitle=objHome.getLoginPageText();
 		  Assert.assertTrue(loginPageTitle.contains("Welcome to the new Tricentis store!"));
+		  objHome.register();
 		  //
 	  }
 
